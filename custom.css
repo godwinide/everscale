@@ -37,10 +37,14 @@
         flex-direction: column;
         justify-content: center;
     }    
+    .sticker div:nth-child(1){
+        width: 100%;
+    }
     .sticker div:nth-child(2){
         text-align: start;
         padding: 0;
         margin-left: 1em;
         margin-top: .5em;
+        width: 100%;
     }
 }
