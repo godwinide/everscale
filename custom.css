@@ -1,0 +1,46 @@
+.sticker{
+    height: 150px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    display: flex;
+    flex-direction: "row";
+    justify-content: "spcae-between";
+    z-index: 10000 !important;
+}
+
+.sticker .action-btns a{
+    padding: 1.5em;
+    background-color: dodgerblue;
+    color: #fff;
+    font-size: .7em;
+    text-decoration: none;
+}
+
+.sticker div:nth-child(1){
+    width: 65%;
+    padding-top: 1em;
+    padding-left: 1em;
+}
+
+.sticker div:nth-child(2){
+    width: 35%;
+    padding-top: 5em;
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px){
+    .sticker{
+        height: 350px;
+        flex-direction: column;
+        justify-content: center;
+    }    
+    .sticker div:nth-child(2){
+        text-align: start;
+        padding: 0;
+        margin-left: 1em;
+        margin-top: .5em;
+    }
+}

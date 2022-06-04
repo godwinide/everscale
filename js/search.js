@@ -18,7 +18,6 @@ function subgovSearch(data) {
             // const obj = JSON.parse(data);
             $('.subgov_cards').html(data);
             //console.log(data.length);
-
             // console.log(obj.json);
             // obj.json.forEach(element => console.log(element.id));
         },
